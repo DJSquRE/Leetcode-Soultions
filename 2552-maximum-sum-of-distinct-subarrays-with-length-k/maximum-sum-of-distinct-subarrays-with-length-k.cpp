@@ -14,7 +14,9 @@ public:
             while((right-left+1>k)|| check[nums[right]]>1){
                 prefix-=nums[left];
                 check[nums[left]]--;
-               
+                if(check[nums[left]]==0){
+                    check.erase(nums[left]);
+                }
                 left++;
             }
             if(right-left+1==k){
