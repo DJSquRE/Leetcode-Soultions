@@ -17,26 +17,26 @@ public:
 
             for(int i=x-1;i>=0;i--){
                 if(grid[i][y]=='W'||grid[i][y]=='G') break;
-                if(grid[i][y]!='g') count--;
-                grid[i][y]='g';
+                if(grid[i][y]!='g') {count--;
+                grid[i][y]='g';}
                 
             }
 
             for(int i=x+1;i<m;i++){
                 if(grid[i][y]=='W'||grid[i][y]=='G') break;
-                if(grid[i][y]!='g') count--;
-                grid[i][y]='g';
+                if(grid[i][y]!='g') {count--;
+                grid[i][y]='g';}
             }
 
             for(int j=y-1;j>=0;j--){
                 if(grid[x][j]=='W'|| grid[x][j]=='G') break;
-                if(grid[x][j]!='g') count--;
-                grid[x][j]='g';
+                if(grid[x][j]!='g') {count--;
+                grid[x][j]='g';}
             }
             for(int j=y+1;j<n;j++){
                 if(grid[x][j]=='W'|| grid[x][j]=='G') break;
-                if(grid[x][j]!='g') count--;
-                grid[x][j]='g';
+                if(grid[x][j]!='g') {count--;
+                grid[x][j]='g';}
             }
         }
         
