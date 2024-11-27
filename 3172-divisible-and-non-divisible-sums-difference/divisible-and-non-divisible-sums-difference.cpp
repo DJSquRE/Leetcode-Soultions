@@ -1,13 +1,11 @@
 class Solution {
 public:
     int differenceOfSums(int n, int m) {
-        int divsum=0;
-        int nondivsum=0;
-
+        int sum=0;
         for(int i=1;i<=n;i++){
-            if(i%m==0) divsum+=i;
-            else nondivsum+=i;
+            if(i%m==0) sum-=i;
+            else sum+=i;
         }
-        return nondivsum-divsum;
+        return sum;
     }
 };
